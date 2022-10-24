@@ -1,0 +1,45 @@
+$txtColorLabel: #483e53;
+$txtColorInput: #483e53;
+$txtColorErrorLabel: #e52113;
+
+.label {
+  color: $txtColorLabel;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.error-message {
+  color: $txtColorErrorLabel;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.input {
+  border: 1px solid #ccc;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 4px 7px 4px 15px;
+  outline: 0;
+  width: 85%;
+  height: 40px;
+  margin-left: 20px;
+  color: $txtColorInput;
+  font-weight: bold;
+
+  &::placeholder {
+    color: grey;
+    opacity: 0.6;
+    font-weight: normal;
+  }
+
+  &:hover {
+    border: 1px solid $txtColorLabel;
+  }
+}
